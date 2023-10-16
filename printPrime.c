@@ -2,7 +2,7 @@
 
 void main() {
     int num;
-    printf("Print prime numbers upto: ");
+    printf("Print prime numbers up to: ");
     scanf("%d",&num);
 
     // this function prints prime numbers
