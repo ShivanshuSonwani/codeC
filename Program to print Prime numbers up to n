@@ -1,6 +1,7 @@
+// Program to print Prime numbers up to n.
 #include<stdio.h>
 
-void main() {
+int main() {
     int num;
     printf("Print prime numbers up to: ");
     scanf("%d",&num);
@@ -21,4 +22,5 @@ void main() {
     }
 
     prime(num);
+    return 0;
 }
