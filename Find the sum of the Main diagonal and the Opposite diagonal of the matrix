@@ -4,6 +4,8 @@
 int main(){
     // Creating variables
     int matrix[10][10], n, i, j, mainDiagonal=0, oppositeDiagonal=0;
+
+    // User input
     printf("Enter the order of the matrix: ");
     scanf("%d",&n);
     printf("Enter the elements in the matrix:\n");
