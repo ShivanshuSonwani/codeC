@@ -1,0 +1,40 @@
+#include<stdio.h>
+
+int main(){
+    // Creating variables
+    int matrix[10][10], n, i, j, mainDiagonal=0, oppositeDiagonal=0;
+    printf("Enter the order of the matrix: ");
+    scanf("%d",&n);
+    printf("Enter the elements in the matrix:\n");
+    for(i=0;i<n;i++){
+        for(j=0;j<n;j++){
+            scanf("%d",&matrix[i][j]);
+        }
+    }
+
+    // Printing the entered Matrix
+    printf("Given matrix:\n");
+    for(i=0;i<n;i++){
+        for(j=0;j<n;j++){
+            printf("%d\t",matrix[i][j]);
+        }
+        printf("\n");
+    }
+
+    // Logic of the given Question
+    // Calculating the sum of the Main diagonal and the Opposite diagonal of the Matrix
+    for(i=0;i<n;i++){
+        for(j=0;j<n;j++){
+            if(i==j){
+              mainDiagonal = mainDiagonal+matrix[i][j];
+            }
+            if(i+j == n-1){
+                oppositeDiagonal = oppositeDiagonal+matrix[i][j];
+            }
+        }
+    }
+    // Printing the Result
+    printf("Sum of the main diagonal: %d\n",mainDiagonal);
+    printf("Sum of the opposite diagonal: %d\n",oppositeDiagonal);
+    return 0;
+}
