@@ -1,3 +1,4 @@
+// Program to find the sum of the Main diagonal and the Opposite diagonal of the matrix
 #include<stdio.h>
 
 int main(){
